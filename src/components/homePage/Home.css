@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 3px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#cardss{
+    width: 100%;
+}
+
+.main{
+     display: flex;
+     height: 80%;
+     align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+.col1{
+    margin-left: 45px;
+}
+
+.col h2{
+    font-size: 45px;
+    color: rgb(47, 192, 192);
+    font-weight: 600;
+}
+
+.col p{
+    font-size: 20px;
+    color: grey;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.col button{
+    margin-top: 30px;
+}
+
+.card{
+    width: 200px;
+    height: 220px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    padding: 15px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+.card1{
+    background-image: url(src/assets/pic1.jpg);
+}
+
+.card2{
+    background-image: url(src/assets/pic2.jpg);
+}
+
+.card3{
+    background-image: url(src/assets/pic3.jpg);
+}
+
+.card4{
+    background-image: url(src/assets/pic4.jpg);
+}
+
+.card5{
+    background-image: url(src/assets/pic5.jpg);
+}
+
+.card6{
+    background-image: url(src/assets/pic6.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.2);
+}
+
+.blog-overlay {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(rgba(52, 173, 84, 0), rgba(52, 173, 84, 1));
+    z-index: 1;
+}
+
+.service-item {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.service-item .service-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.service-item .service-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-item .service-img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.service-item .service-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    transition: .5s ease-out;
+    z-index: 2;
+}
+
+.service-item:hover .service-img::after {
+    width: 0;
+    left: auto;
+    right: 0;
+}
+
+.service-item .service-text .service-icon {
+    width: 140px;
+    height: 140px;
+    padding: 15px;
+    margin-top: -70px;
+    margin-bottom: 40px;
+    background: #FFFFFF;
+    border-radius: 140px;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .1);
+}
+
+.service-item .service-text h5,
+.service-item .service-text p {
+    transition: .5s;
+}
+
+.service-item:hover .service-text h5,
+.service-item:hover .service-text p {
+    color: #ffb300;
+}
+
+.service-item .service-text .btn {
+    color: var(--secondary);
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .25);
+}
+
+.service-item .service-text .btn:hover {
+    color: var(--dark);
+    background: var(--secondary);
+}
+
+.hometext{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
